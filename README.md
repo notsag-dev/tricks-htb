@@ -18,3 +18,4 @@ https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell
 echo "import pty; pty.spawn('/bin/bash')" > spawn.py
 python3 spawn.py
 ```
+
