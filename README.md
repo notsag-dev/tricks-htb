@@ -21,5 +21,5 @@ https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell
 ### When you cannot run `su` but you have python
 ```bash
 echo "import pty; pty.spawn('/bin/bash')" > spawn.py
-python3 spawn.py
+python spawn.py
 ```
