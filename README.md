@@ -1,6 +1,9 @@
 # tricks-htb
 Tricks learned while practicing in the hack the box lab.
 
+## Create Python http server to serve files
+python -m SimpleHTTPServer
+
 ## Bypass login
 (magic) Try SQL injection in the login form. Pass this as user and password: `' or 1 = 1--`
 
