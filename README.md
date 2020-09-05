@@ -23,3 +23,6 @@ https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell
 echo "import pty; pty.spawn('/bin/bash')" > spawn.py
 python spawn.py
 ```
+
+### Reverse shell cheatsheet
+http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
