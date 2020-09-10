@@ -26,3 +26,9 @@ python spawn.py
 
 ### Reverse shell cheatsheet
 http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+
+### Dump traffic on an interface to console
+This is useful when blind-exploiting a system, among other situations. Just dump the traffic of an interface to console:
+```
+tcpdump -i tun0 
+```
