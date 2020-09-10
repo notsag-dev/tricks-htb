@@ -18,10 +18,9 @@ https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
 ### PHP reverse shell
 https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php
 
-### When you cannot run `su` but you have python
+### Spawn bash shell using Python
 ```bash
-echo "import pty; pty.spawn('/bin/bash')" > spawn.py
-python spawn.py
+python3 -c "import pty; pty.spawn('/bin/bash')"
 ```
 
 ### Reverse shell cheatsheet
