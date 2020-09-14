@@ -33,4 +33,4 @@ tcpdump -i tun0
 ```
 
 ### Exploit suggester for postexploitation on Metasploit
-Use `post/multi/recon/local_exploit_suggester` after a non-admin meterpreter session is created in order to get suggestions on which exploits may be executed next.
+Use `post/multi/recon/local_exploit_suggester` after a non-admin meterpreter session is created in order to get suggestions on which exploits could be executed next.
