@@ -43,3 +43,7 @@ If when intercepting the server responses with a proxy and the `302 Found` respo
 
 ### Abstract shit
 - If there are so many things that look the same, check if there's one of them that's different.
+
+### Shell from mysql
+Run this from mysql to drop to a shell and see what user you are on:
+`\! /bin/sh`
