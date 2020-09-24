@@ -111,7 +111,7 @@ Use {{filename}}
 Use `hash-identifier`
 
 ### Bruteforce ssh key with John the Ripper
-If you run into an encrypted ssh file, that will start by something like this:
+If you run into an encrypted ssh key, that will start by something like this:
 ```
 -----BEGIN RSA PRIVATE KEY-----
 Proc-Type: 4,ENCRYPTED
