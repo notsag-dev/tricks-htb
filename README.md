@@ -85,3 +85,6 @@ Recursive enumeration is important whenever we run out of options.
 ### exiftool to get files metadata
 Use: `exiftool {{filename}}`
 Note that browsers sometimes squash some metadata when downloading files, so download them using `wget` instead.
+
+### Use book.hacktricks.xyz
+Great resource, do check out when Duckduckgoing.
