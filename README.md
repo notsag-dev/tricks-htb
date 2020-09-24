@@ -73,3 +73,9 @@ Mainly for when there are several services running on the server, but it should 
 
 ### Scan all the ports with nmap
 To scan all the ports with nmap add `-p-`.
+
+### Threads number
+For max speed while running scans don't forget to increase the number of threads.
+
+### Also enumerate recursively
+Recursive enumeration is important whenever we run out of options.
