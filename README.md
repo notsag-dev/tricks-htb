@@ -100,3 +100,7 @@ Use `strings {{filename}}` to get strings from binaries. This may help find pass
 
 ### Find files and directories you can write
 `find . -writable`
+
+### Redirect errors to /dev/null `2>/dev/null`
+https://askubuntu.com/questions/350208/what-does-2-dev-null-mean
+
