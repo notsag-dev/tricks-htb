@@ -82,6 +82,6 @@ For max speed while running scans don't forget to increase the number of threads
 ### Also enumerate recursively
 Recursive enumeration is important whenever we run out of options.
 
-### exiftool to get image metadata
+### exiftool to get files metadata
 Use: `exiftool {{filename}}`
-Note that browsers sometimes squash some metadata when downloading pictures, so download them using `wget` instead.
+Note that browsers sometimes squash some metadata when downloading files, so download them using `wget` instead.
