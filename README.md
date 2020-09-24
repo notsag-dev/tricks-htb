@@ -70,3 +70,6 @@ Mainly for when there are several services running on the server, but it should 
 
 ### Check if port is open with nc
 `nc -zv $HOST_IP $PORT`
+
+### Scan all the ports with nmap
+To scan all the ports with nmap add `-p-`.
