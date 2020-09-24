@@ -56,3 +56,5 @@ Run this from mysql to drop to a shell and see what user you are on:
 - Also change the file name and append `.php` (if the image name is image.gif, it would be image.gif.php)
 - Access the file from the browser and add `?whatever={{command}}`
 
+### Wordpress
+Use `wpscan` to scan Wordpress sites.
