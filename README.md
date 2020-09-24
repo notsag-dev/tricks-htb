@@ -88,3 +88,6 @@ Note that browsers sometimes squash some metadata when downloading files, so dow
 
 ### Use book.hacktricks.xyz
 Great resource, do check out when Duckduckgoing.
+
+### Redis
+When redis is available on the server, a common thing to try is to upload a file to gain access. https://book.hacktricks.xyz/pentesting/6379-pentesting-redis
