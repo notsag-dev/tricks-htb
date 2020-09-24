@@ -107,3 +107,5 @@ https://askubuntu.com/questions/350208/what-does-2-dev-null-mean
 ### Get information about files using `stat`
 Use {{filename}}
 
+### Identify hash type
+Use `hash-identifier`
