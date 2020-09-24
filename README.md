@@ -58,3 +58,6 @@ Run this from mysql to drop to a shell and see what user you are on:
 
 ### Wordpress
 Use `wpscan` to scan Wordpress sites.
+
+### jar files
+Jar files can be decompiled to get information from them. First, unzip it using `unzip`, then decompile the unzipped .class file using the program `jad`.
