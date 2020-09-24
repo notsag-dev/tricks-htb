@@ -37,3 +37,6 @@ Use `post/multi/recon/local_exploit_suggester` after a non-admin meterpreter ses
 
 ### DNS
 DNS servers are added to `/etc/resolv.conf`. It may be useful for when the server just accepts requests when host equals to _machineName.htb_. Otherwise the same could be achieved by adding an entry to the file `/etc/hosts`.
+
+### Redirects
+If when intercepting the server responses with a proxy and the 302 Found response has some content, the HTTP response number and code can be manually changed to, for example, `200 OK` to see the content on the browser.
