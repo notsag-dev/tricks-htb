@@ -23,7 +23,7 @@ The press ctrl + z
 
 Then run: `stty raw -echo`
 
-Then write `fg` and press enter (note there's no output of `fg`.
+Then write `fg` and press enter (note there's no output of `fg`)
 
 ### Reverse shell cheatsheet
 http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
