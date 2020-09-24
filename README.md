@@ -109,3 +109,17 @@ Use {{filename}}
 
 ### Identify hash type
 Use `hash-identifier`
+
+### Bruteforce ssh key with John the Ripper
+If you run into an encrypted ssh file, that will start by something like this:
+```
+-----BEGIN RSA PRIVATE KEY-----
+Proc-Type: 4,ENCRYPTED
+DEK-Info: DES-EDE3-CBC,73E9CEFBCCF5287C
+```
+
+Then the process of bruteforcing has 2 steps:
+1) Transform from ssh format to john format:
+`python /usr/share/john/ssh2john.py key.ssh > key.john.ssh`
+2) Bruteforce:
+`john -wordlist={{wordlist path}} key.john.ssh`
