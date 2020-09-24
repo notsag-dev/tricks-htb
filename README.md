@@ -97,3 +97,6 @@ When redis is available on the server, a common thing to try is to upload a file
 Use `strings {{filename}}` to get strings from binaries. This may help find passwords or other sensitive information.
 
 ### Multiple windows with `tmux` or `screen`
+
+### Find files and directories you can write
+`find . -writable`
