@@ -91,3 +91,6 @@ Great resource, do check out when Duckduckgoing.
 
 ### Redis
 When redis is available on the server, a common thing to try is to upload a file to gain access. https://book.hacktricks.xyz/pentesting/6379-pentesting-redis
+
+### Get strings from a binary
+Use `strings {{filename}}` to get strings from binaries. This may help find passwords or other sensitive information.
