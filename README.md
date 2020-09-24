@@ -67,3 +67,6 @@ Jar files can be decompiled to get information from them. First, unzip it using 
 
 ### Do several scans concurrently
 Mainly for when there are several services running on the server, but it should be always done that way. After the initial nmap scan has finished, start several scans depending on the case. Eg if port 80 is open, trigger gobuster (with 2 lists, one short and one longer), nikto and maybe an nmap vuln scan.
+
+### Check if port is open with nc
+`nc -zv $HOST_IP $PORT`
