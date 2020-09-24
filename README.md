@@ -19,6 +19,11 @@ https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell
 ```bash
 python3 -c "import pty; pty.spawn('/bin/bash')"
 ```
+The press ctrl + z
+
+Then run: `stty raw -echo`
+
+Then write `fg` and press enter (note there's no output of `fg`.
 
 ### Reverse shell cheatsheet
 http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
