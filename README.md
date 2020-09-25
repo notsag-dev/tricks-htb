@@ -123,3 +123,7 @@ Then the process of bruteforcing has 2 steps:
 `python /usr/share/john/ssh2john.py key.ssh > key.john.ssh`
 2) Bruteforce:
 `john -wordlist={{wordlist path}} key.john.ssh`
+
+### Dirty cow Linux privesc
+Apparently very common for many outdated Linux kernels.
+https://github.com/FireFart/dirtycow/blob/master/dirty.c
