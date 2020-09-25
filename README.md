@@ -127,3 +127,5 @@ Then the process of bruteforcing has 2 steps:
 ### Dirty cow Linux privesc
 Apparently very common for many outdated Linux kernels.
 https://github.com/FireFart/dirtycow/blob/master/dirty.c
+
+### `steghide` to extract or inject files in images
