@@ -162,3 +162,4 @@ set PAYLOAD windows/meterpreter/reverse_tcp
 Then set options and run.
 
 ### Use `systeminfo` on the Windows shell
+In the results, check the Hotfixes part to see if the system has been updated, and what updates it has.
