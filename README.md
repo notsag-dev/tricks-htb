@@ -135,3 +135,6 @@ When a SUID program invokes another program just by its name without specifying 
 
 ### Reverse engineering a binary with `strace` and `ltrace`
 It is possible to capture the system calls running `strace {{program}}` and the library calls using `ltrace {{program}}`
+
+### Base64 encode binary to copy it like text from console
+```base64 -w0 {{binary}}```
