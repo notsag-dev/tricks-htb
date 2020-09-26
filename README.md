@@ -138,3 +138,6 @@ It is possible to capture the system calls running `strace {{program}}` and the 
 
 ### Base64 encode binary to copy it like text from console
 ```base64 -w0 {{binary}}```
+
+### Anonymous for an ftp server
+If anonymous access is detected by, for example, an nmap scan, connect to it using user=anonymous and it does not really matter what is passed as password.
