@@ -129,3 +129,9 @@ Apparently very common for many outdated Linux kernels.
 https://github.com/FireFart/dirtycow/blob/master/dirty.c
 
 ### `steghide` to extract or inject files in images
+
+### Privesc trick
+When a SUID program invokes another program just by its name without specifying location, it may be possible to do a PATH trick to make it execute the wrong one as root: inject another dir to the path that contains a program with the same name but performs something we want. (FIXME reword this)
+
+### Reverse engineering a binary with `strace` and `ltrace`
+It is possible to capture the system calls running `strace {{program}}` and the library calls using `ltrace {{program}}`
