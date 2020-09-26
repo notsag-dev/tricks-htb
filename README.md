@@ -160,3 +160,5 @@ set PAYLOAD windows/meterpreter/reverse_tcp
 ```
 
 Then set options and run.
+
+### Use `systeminfo` on the Windows shell
