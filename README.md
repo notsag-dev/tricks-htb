@@ -105,7 +105,7 @@ Use `strings {{filename}}` to get strings from binaries. This may help find pass
 https://askubuntu.com/questions/350208/what-does-2-dev-null-mean
 
 ### Get information about files using `stat`
-Use {{filename}}
+Use `use {{filename}}`
 
 ### Identify hash type
 Use `hash-identifier`
