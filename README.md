@@ -203,3 +203,6 @@ There are several ways to do data recovery from a device:
 
 ### Trying to get a foothold and no tool seems to work?
 Have you Googled `{{app|service|platform}} remote code execution`?
+
+### Burp url encode
+When intercepting a request with Burp, if the information that is being sent to the server eg. a url command to trigger a reverse shell, is sent as a query string, select it and press `ctrl + u` to url-encode it.
