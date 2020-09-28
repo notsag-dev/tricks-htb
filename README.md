@@ -165,6 +165,8 @@ Then set options and run.
 In the results, check the Hotfixes part to see if the system has been updated, and what updates it has.
 
 ### Upgrade regular shell to meterpreter shell (Windows)
+> When working with Windows x64, use `windows/x64/meterpreter/reverse_tcp` as payload instead.
+
 Once there is a regular shell available, it may be useful to upgrade it to a meterpreter shell to use metasploit modules to, for example, escalate privileges.
 
 Generate executable using `msfvenom`:
