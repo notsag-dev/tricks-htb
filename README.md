@@ -200,3 +200,6 @@ There are several ways to do data recovery from a device:
 1) `strings /dev/devicename`: This will get all the strings on the device and may include deleted files' strings.
 2) `xxd /dev/devicename`: Does a hexdump of all the contents of the device.
 3) Check ippsec's Mirai walkthrough for hints on how to use  https://www.youtube.com/watch?v=YRsfX6DW10E
+
+### Trying to get a foothold and no tools work?
+Have you Googled `{{app|service|platform}} remote code execution`?
