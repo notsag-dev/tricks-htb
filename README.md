@@ -8,7 +8,7 @@ python3 -m http.server
 ```
 
 ### Bypass login
-(magic) Try SQL injection in the login form. Pass this as user and password: `' or 1 = 1--`
+Try SQL injection in the login form. Pass this as user and password: `' or 1 = 1--`
 
 ### Enumeration
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
@@ -60,7 +60,8 @@ Run this from mysql to drop to a shell and see what user you are on:
 - Also change the file name and append `.php` (if the image name is image.gif, it would be image.gif.php)
 - Access the file from the browser and add `?whatever={{command}}`
 
-Tip: The `file` command gets a file's type. It may be useful for checking if 
+Tip: The `file` command gets a file's type. It may be useful to test if the command says the file is an image.
+Tip2: Gif's magic bytes are `GIF8;`.
 
 ### Wordpress
 Use `wpscan` to scan Wordpress sites.
@@ -193,3 +194,9 @@ Execute `meterpreter.exe` on the victim machine and the listener should pop a me
 ```
 df -lh
 ```
+
+### File/data recovery
+There are several ways to do data recovery from a device:
+1) `strings /dev/devicename`: This will get all the strings on the device and may include deleted files' strings.
+2) `xxd /dev/devicename`: Does a hexdump of all the contents of the device.
+3) Check ippsec's Mirai walkthrough for hints on how to use  https://www.youtube.com/watch?v=YRsfX6DW10E
