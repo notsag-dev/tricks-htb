@@ -188,3 +188,8 @@ run
 ```
 
 Execute `meterpreter.exe` on the victim machine and the listener should pop a meterpreter shell.
+
+### List free space of every device
+```
+df -lh
+```
