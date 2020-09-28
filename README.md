@@ -188,4 +188,3 @@ run
 ```
 
 Execute `meterpreter.exe` on the victim machine and that's it.
-```
