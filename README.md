@@ -206,3 +206,6 @@ Have you Googled `{{app|service|platform}} remote code execution`?
 
 ### Burp url encode
 When intercepting a request with Burp, if the information that is being sent to the server eg. a url command to trigger a reverse shell, is sent as a query string, select it and press `ctrl + u` to url-encode it.
+
+### Check SSL certificate info
+If the box has the port 443 open, check certificate info. Subdomains and email addresses could be taken from there.
