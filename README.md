@@ -209,3 +209,5 @@ When intercepting a request with Burp, if the information that is being sent to 
 
 ### Check SSL certificate info
 If the box has the port 443 open, check certificate info. Subdomains and email addresses could be taken from there.
+
+### If you got email credentials, check them on an email client
