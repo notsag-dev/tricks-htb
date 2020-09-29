@@ -64,7 +64,7 @@ Tip: The `file` command gets a file's type. It may be useful to test if the comm
 Tip2: Gif's magic bytes are `GIF8;`.
 
 ### Wordpress
-Use `wpscan` to scan Wordpress sites.
+Use `wpscan` to scan Wordpress sites. If vulnerabilities are found, search for them on searchsploit.
 
 ### jar files
 Jar files can be decompiled to get information from them. First, unzip it using `unzip`, then decompile the unzipped .class file using the program `jad`.
