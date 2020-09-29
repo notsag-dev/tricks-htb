@@ -211,3 +211,6 @@ When intercepting a request with Burp, if the information that is being sent to 
 If the box has the port 443 open, check certificate info. Subdomains and email addresses could be taken from there.
 
 ### If you got email credentials, check them on an email client
+
+### Use rumkin cipher tools for any cipher-related problem
+http://rumkin.com/tools/cipher/
