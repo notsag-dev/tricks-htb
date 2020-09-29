@@ -214,3 +214,5 @@ If the box has the port 443 open, check certificate info. Subdomains and email a
 
 ### Use rumkin cipher tools for any cipher-related problem
 http://rumkin.com/tools/cipher/
+
+### Learn cryto at https://cryptopals.com/
