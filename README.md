@@ -226,3 +226,6 @@ fcrackzip -D -p /usr/share/wordlists/rockyou.txt file.zip
 ### Mongo db
 Connect: `mongo -p -u {{username}} {{dbname}}`
 Insert: `db.{{tablename}}.insert({datafield1: datavalue1})`
+
+### Find setuid files
+When a file has the setuid flag set, it means it can be executed (or applied changes on) by anybody as they were the file's owner or as they belonged to the same group of the owner. These files are great candidates for privilege escalation. To list them use: `find / -perm 4000 2>/dev/null`.
