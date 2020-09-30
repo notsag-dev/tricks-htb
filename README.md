@@ -216,3 +216,9 @@ If the box has the port 443 open, check certificate info. Subdomains and email a
 http://rumkin.com/tools/cipher/
 
 ### Learn cryto at https://cryptopals.com/
+
+### Crack zip files
+If a zip file requires a password to unzip, use `fcrackzip` to crack it:
+```
+fcrackzip -D -p /usr/share/wordlists/rockyou.txt file.zip
+```
