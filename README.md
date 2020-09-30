@@ -222,3 +222,8 @@ If a zip file requires a password to unzip, use `fcrackzip` to crack it:
 ```
 fcrackzip -D -p /usr/share/wordlists/rockyou.txt file.zip
 ```
+
+### Connect to mongo db
+```
+mongo -p -u {{username}} {{dbname}}
+```
