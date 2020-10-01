@@ -49,6 +49,8 @@ or
 > {{server name}}
 ```
 
+Use `dig`
+
 ### SMB
 Use smbmap to enumerate SMB. `smbmap -H $HOST_IP` 
 
