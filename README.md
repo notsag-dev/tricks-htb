@@ -229,3 +229,6 @@ Insert: `db.{{tablename}}.insert({datafield1: datavalue1})`
 
 ### Find setuid files
 When a file has the setuid flag set, it means it can be executed (or applied changes on) by anybody as they were the file's owner or as they belonged to the owner group. These files are great candidates for privilege escalation. To list them use: `find / -perm 4000 2>/dev/null`.
+
+### Interrogation marks `cd /r??t`
+Sometimes there is a blacklisting method that prevents the inclusion of, for example, the word _root_, in a command or path. Using the interrogation marks can be helpful in some cases.
