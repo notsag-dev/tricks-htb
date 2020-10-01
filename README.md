@@ -41,6 +41,14 @@ Use `post/multi/recon/local_exploit_suggester` after a non-admin meterpreter ses
 ### DNS
 DNS servers are added to `/etc/resolv.conf`. It may be useful for when the server just accepts requests when host equals to _machineName.htb_. Otherwise the same could be achieved by adding an entry to the file `/etc/hosts`.
 
+Use `nslookup` to get info from a DNS server:
+```
+nslookup
+> SERVER {{serverip}}
+or
+> {{server name}}
+```
+
 ### SMB
 Use smbmap to enumerate SMB. `smbmap -H $HOST_IP` 
 
