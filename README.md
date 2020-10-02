@@ -47,9 +47,31 @@ nslookup
 > SERVER {{serverip}}
 or
 > {{server name}}
+> 
 ```
 
-Use `dig`
+### Using `host`
+Use `host` to get the name servers' urls:
+```
+host -t ns {{domain name}}
+```
+
+Do a host transfer zone query:
+```
+host -l {{domain name}} {{name server}}
+```
+
+### Using `dig`
+Use `dig` to get the name servers' urls:
+```
+dig -t ns {{url}}
+```
+
+Do a host transfer query:
+```
+dig axfr {{domain name}} @{{name server}}
+```
+Hackersploit on zone transfers: https://www.youtube.com/watch?v=kdYnSfzb3UA
 
 ### SMB
 Use smbmap to enumerate SMB. `smbmap -H $HOST_IP` 
