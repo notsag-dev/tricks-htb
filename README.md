@@ -86,7 +86,14 @@ If when intercepting the server responses with a proxy and the `302 Found` respo
 - If there are so many things that look the same, check if there's one of them that's different. In general, this can be files sizes, files contents, last modification date, etc.
 
 ### Shell from mysql
-`mysql -u admin -p`
+```
+mysql -u admin -p
+mysql --host=localhost --user=myname --password mydb
+mysql -h localhost -u myname -p mydb
+
+show databases;
+use {{dbname}}
+```
 
 Run this from mysql to drop to a shell and see what user you are on:
 `\! /bin/sh`
