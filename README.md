@@ -93,6 +93,7 @@ mysql -h localhost -u myname -p mydb
 
 show databases;
 use {{dbname}}
+show tables;
 ```
 
 Run this from mysql to drop to a shell and see what user you are on:
