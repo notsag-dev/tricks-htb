@@ -269,3 +269,9 @@ Sometimes there is a blacklisting method that prevents the inclusion of, for exa
 ```
 wfuzz -c -z file,/usr/share/wordlists/SecLists/Usernames/top-usernames-shortlist.txt -z file,/usr/share/wordlists/SecLists/Passwords/xato-net-10-million-passwords-100.txt -d "username=FUZZ&password=FUZ2Z" {{url}}
 ```
+
+### sqlmap
+Using a proxy or the browser itself save a complete login request (including body) and then just run the following:
+```
+sqlmap -r request.req
+```
