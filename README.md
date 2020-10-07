@@ -264,3 +264,8 @@ When a file has the setuid flag set, it means it can be executed (or applied cha
 
 ### Interrogation marks `cd /r??t`
 Sometimes there is a blacklisting method that prevents the inclusion of, for example, the word _root_, in a command or path. Using the interrogation marks can be helpful in some cases.
+
+### wfuzz
+```
+wfuzz -c -z file,/usr/share/wordlists/SecLists/Usernames/top-usernames-shortlist.txt -z file,/usr/share/wordlists/SecLists/Passwords/xato-net-10-million-passwords-100.txt -d "username=FUZZ&password=FUZ2Z" {{url}}
+```
