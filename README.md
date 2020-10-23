@@ -288,3 +288,6 @@ Using a proxy or the browser itself save a complete login request (including bod
 ```
 sqlmap -r request.req
 ```
+
+### steganography
+https://github.com/DominicBreuker/stego-toolkit
