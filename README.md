@@ -291,3 +291,6 @@ sqlmap -r request.req
 
 ### steganography
 https://github.com/DominicBreuker/stego-toolkit
+
+### Check /var/www/html
+Go-to folder when there are web apps running on the server.
