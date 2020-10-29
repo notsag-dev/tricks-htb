@@ -156,6 +156,16 @@ Use `use {{filename}}`
 ### Identify hash type
 Use `hash-identifier`
 
+### Crack hash with hashcat
+keywords: .htpasswd
+Even though it is possible to use the hash identifier to detect the hash type, also the hashcat's hash examples can be used:
+```
+hashcat --example-hashes
+```
+
+Crack:
+hashcat -m {{mode id (check table in hashcat -h)}} {{path to file with just the pass eg /usr/share/wordlists/rockyou.txt}} 
+
 ### Bruteforce ssh key with John the Ripper
 If you run into an encrypted ssh key, that will start by something like this:
 ```
