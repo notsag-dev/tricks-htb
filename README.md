@@ -322,3 +322,9 @@ Sign user certificate
 Generate pfx to be imported in the browser
 ```openssl pkcs12 -export -out username.pfx -inkey username.key -in username.crt```
 
+### SSL get public key from private key
+```openssl pkey -in privatekey.key -pubout```
+
+### SSL get public key from cert
+```openssl x509 -in cert.crt -pubkey -noout```
+
