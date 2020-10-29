@@ -294,3 +294,31 @@ https://github.com/DominicBreuker/stego-toolkit
 
 ### Check /var/www/html
 Go-to folder when there are web apps running on the server.
+
+### SSL CA, site and user certificates
+#### Generar certificate authority
+Create private key:
+```openssl genrsa -aes256 -out ca.key 4096```
+
+Create public certificate:
+```openssl req -new -x509 -days 365 -key ca.key -out ca.crt```
+
+### Generate site certificate
+Generate key:
+```openssl req -newkey rsa:2048 -nodes -keyout mysite.key -out mysite.csr```
+
+Note that csr means certificate signing request.
+
+Sign key:
+```openssk x509 -req -days 365 -in mysite.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out mysite.crt```
+
+### Generate user certificate
+Generate key
+```openssl req -newkey rsa:2048 -nodes -keyout username.key -out username.csr```
+
+Sign user certificate
+```openssk x509 -req -days 365 -in username.csr -CA ca.crt -CAkey ca.key -set_serial 02  -out username.crt```
+
+Generate pfx to be imported in the browser
+```openssl pkcs12 -export -out username.pfx -inkey username.key -in username.crt```
+
