@@ -343,3 +343,6 @@ Generate pfx to be imported in the browser
 ### Permissions on folders
 When a folder has execution permission but not read permission, it will not allow to list contents of the folder using `ls`, but it will allow to `cd` to any folder or open files in that folder if you already know their names and have permissions to read them.
 
+### Transform to decimal notation
+```$ echo "$((2#0111))"```
+
