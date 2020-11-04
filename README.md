@@ -322,14 +322,14 @@ Generate key:
 Note that csr means certificate signing request.
 
 Sign key:
-```openssk x509 -req -days 365 -in mysite.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out mysite.crt```
+```openssl x509 -req -days 365 -in mysite.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out mysite.crt```
 
 ### Generate user certificate
 Generate key
 ```openssl req -newkey rsa:2048 -nodes -keyout username.key -out username.csr```
 
 Sign user certificate
-```openssk x509 -req -days 365 -in username.csr -CA ca.crt -CAkey ca.key -set_serial 02  -out username.crt```
+```openssl x509 -req -days 365 -in username.csr -CA ca.crt -CAkey ca.key -set_serial 02  -out username.crt```
 
 Generate pfx to be imported in the browser
 ```openssl pkcs12 -export -out username.pfx -inkey username.key -in username.crt```
