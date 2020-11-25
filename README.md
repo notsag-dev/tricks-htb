@@ -301,6 +301,10 @@ Using a proxy or the browser itself save a complete login request (including bod
 sqlmap -r request.req
 ```
 
+### NoSQL injection
+https://book.hacktricks.xyz/pentesting-web/nosql-injection
+https://medium.com/bugbountywriteup/nosql-injection-8732c2140576
+
 ### steganography
 https://github.com/DominicBreuker/stego-toolkit
 
