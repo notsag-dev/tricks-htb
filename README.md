@@ -354,3 +354,6 @@ When a folder has execution permission but not read permission, it will not allo
 ```
 hydra -l admin -P /usr/share/wordlists/SecLists/Passwords/darkweb2017-top1000.txt staging-order.mango.htb http-post-form "/:username=^USER^&password=^PASS^&login=login:Log in for ordering" -V
 ```
+
+### Get shell with many binaries per file type
+https://gtfobins.github.io/gtfobins/
