@@ -357,3 +357,6 @@ hydra -l admin -P /usr/share/wordlists/SecLists/Passwords/darkweb2017-top1000.tx
 
 ### Get shell with many binaries per file type
 https://gtfobins.github.io/gtfobins/
+
+### Too long lines
+Piping any command to `less -S` will shorten lines for them to fit in the terminal.
