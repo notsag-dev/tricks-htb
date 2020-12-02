@@ -360,3 +360,6 @@ https://gtfobins.github.io/gtfobins/
 
 ### Too long lines
 Piping any command to `less -S` will shorten lines for them to fit in the terminal.
+
+### Wordpress enumeration
+Use [wpscan](https://tools.kali.org/web-applications/wpscan) to enumerate wordpress sites.
