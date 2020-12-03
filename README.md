@@ -363,3 +363,6 @@ Piping any command to `less -S` will shorten lines for them to fit in the termin
 
 ### Wordpress enumeration
 Use [wpscan](https://tools.kali.org/web-applications/wpscan) to enumerate wordpress sites.
+
+### Magento enumeration
+Use [magescan](https://github.com/steverobbins/magescan) to enumerate magento sites.
