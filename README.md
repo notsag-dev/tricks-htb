@@ -366,3 +366,6 @@ Use [wpscan](https://tools.kali.org/web-applications/wpscan) to enumerate wordpr
 
 ### Magento enumeration
 Use [magescan](https://github.com/steverobbins/magescan) to enumerate magento sites.
+```
+php magescan.phar scan:all www.example.com
+```
