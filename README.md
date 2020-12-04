@@ -394,3 +394,15 @@ To extract them:
 ```
 guestmount --add {{file.vhd}} --inspector --ro /mnt/vhd -v
 ```
+
+### Windows interesting files
+Grab the files SAM and SYSTEM from Windows/system32/config.
+
+Then to grab hashes from them:
+```
+impacket-secretsdump -sam SAM -system SYSTEM local
+```
+
+Notes on this:
+- If a hash begins with `aad3` or `31d6` it's a blank hash (it depends on the type of hash that's going to be one or the other)
+- 
