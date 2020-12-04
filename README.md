@@ -154,7 +154,9 @@ https://askubuntu.com/questions/350208/what-does-2-dev-null-mean
 Use `use {{filename}}`
 
 ### Identify hash type
-Use `hash-identifier`
+Use `hash-identifier` to identify the type of hash.
+
+Paste the hash here https://hashes.org/search.php. For hashes grabbed using impacket-secretsdump, take the second part of the hash (after colon) and paste it there.
 
 ### Crack hash with hashcat
 keywords: .htpasswd
