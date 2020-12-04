@@ -378,3 +378,19 @@ If bash shell is not working, try wrapping it in a bash -c call.
 
 ### See how to get reverse shell/file writes/etc with many programs
 https://gtfobins.github.io
+
+### VHD files (virtual hard drive)
+It is possible to use `7z` to list files included in a vhd file:
+```
+7z l file.vhd
+```
+
+To extract them:
+```
+7z x file.vhd
+```
+
+**Preferred option: mount it:**
+```
+guestmount --add {{file.vhd}} --inspector --ro /mnt/vhd -v
+```
