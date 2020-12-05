@@ -407,4 +407,5 @@ impacket-secretsdump -sam SAM -system SYSTEM local
 
 Notes on this:
 - If a hash begins with `aad3` or `31d6` it's a blank hash (it depends on the type of hash that's going to be one or the other)
-- 
+
+It may be also useful to check if **Groups.xml** is around. This file contains the user's password hash that can be reverted using `gpp-decrypt`
