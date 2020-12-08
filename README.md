@@ -167,7 +167,7 @@ hashcat --example-hashes
 
 Crack:
 ```
-hashcat -m {{mode id (check table in hashcat -h)}} {{path to file with just the pass eg /usr/share/wordlists/rockyou.txt}}
+hashcat -m {{mode id (check table in hashcat -h)}} {{path to the hash}} {{path to pass dict eg /usr/share/wordlists/rockyou.txt}}
 ```
 
 ### Bruteforce ssh key with John the Ripper
