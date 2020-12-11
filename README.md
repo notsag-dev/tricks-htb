@@ -435,3 +435,20 @@ If Bloodhound indicates a user is kerberoastable, then run the following to retr
 ```
 GetUserSPNs.py  -request -dc-ip {{if of the domain controller}} {{user as which is being run with domain (password needed) e.g. active.htb/svc_tgs}}
 ```
+
+## OS detection based on ping ttl
+Windows: 128ms
+```
+PING 10.10.10.184 (10.10.10.184) 56(84) bytes of data.
+64 bytes from 10.10.10.184: icmp_seq=1 ttl=127 time=182 ms
+```
+Linux: 64ms
+```
+PING localhost(localhost (::1)) 56 data bytes
+64 bytes from localhost (::1): icmp_seq=1 ttl=64 time=0.020 ms
+```
+MacOS: 64ms
+```
+PING localhost (127.0.0.1): 56 data bytes
+64 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.049 ms
+```
