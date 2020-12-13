@@ -415,7 +415,14 @@ Notes on this:
 
 It may be also useful to check if **Groups.xml** is around. This file contains the user's password hash that can be reverted using `gpp-decrypt`
 
-## Active directory
+---
+
+Also check if nsclient is installed. It eventually allows code execution.
+
+Get password: `nscp.exe web -- password --display`
+Set new password: `nscp.exe web -- password --set {{new-password}}`
+
+### Active directory
 Get AD users:
 ```
 python GetADUsers.py -all -dc-ip 10.10.10.100 active.htb/SVC_TGS
