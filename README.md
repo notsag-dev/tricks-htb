@@ -464,3 +464,9 @@ MacOS: 64ms
 PING localhost (127.0.0.1): 56 data bytes
 64 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.049 ms
 ```
+
+### Domain flyover
+Check http responses and take screenshots:
+```
+cat hosts.txt | aquatone
+```
