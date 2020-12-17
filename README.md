@@ -111,6 +111,12 @@ Tip2: Gif's magic bytes are `GIF8;`.
 ### Wordpress
 Use `wpscan` to scan Wordpress sites. If vulnerabilities are found, search for them on searchsploit.
 
+### Drupal
+Use `droopscan` to scan Drupal sites. If vulnerabilities are found, search for them on searchsploit.
+
+Also, with Drupalgeddon it was possible to get a shell really quickly on HTB's Bastard machine: 
+https://github.com/dreadlocked/Drupalgeddon2
+
 ### jar files
 Jar files can be decompiled to get information from them. First, unzip it using `unzip`, then decompile the unzipped .class file using the program `jad`.
 
