@@ -1,5 +1,5 @@
 # tricks-htb
-Tricks learned while working on the Hack the Box lab.
+Tricks learned while working on the Hack the Box lab (personal, non-revised, dirty)
 
 ### Create Python http server to serve files
 ```bash
